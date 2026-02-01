@@ -1,14 +1,11 @@
 package org.example.darijatranslatorapi;
 
-import jakarta.ws.rs.GET;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.Produces;
+public class TranslationRequest {
+    private String text;
 
-@Path("/hello-world")
-public class HelloResource {
-    @GET
-    @Produces("text/plain")
-    public String hello() {
-        return "Hello, World!";
-    }
+    // Constructeur vide obligatoire pour JAX-RS
+    public TranslationRequest() {}
+
+    public String getText() { return text; }
+    public void setText(String text) { this.text = text; }
 }

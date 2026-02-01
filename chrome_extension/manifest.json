@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Darija Translator Pro",
+  "version": "1.0",
+  "description": "Translate English to Darija in your side panel",
+  "permissions": ["sidePanel"],
+  "action": {
+    "default_title": "Open side panel"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "host_permissions": [
+    "http://localhost:8080/*"
+  ]
+}
